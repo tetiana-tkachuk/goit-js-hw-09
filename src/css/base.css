@@ -27,6 +27,21 @@ body {
 main {
   flex-grow: 1;
 }
-main:has(.back-link) {
-  text-align: center;
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f9fafbbd;
+  color: #2e2f42;
+  font-weight: 600;
+  padding: 8px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.15);
+    outline: none;
+  }
 }
