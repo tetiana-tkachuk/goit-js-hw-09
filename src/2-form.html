@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main></main>
+    <main>
+      <div class="container">
+        <header class="header">
+          <a class="back-link" href="./index.html">Go back</a>
+        </header>
+        <form class="feedback-form" autocomplete="off">
+          <label>
+            Email
+            <input type="email" name="email" autofocus />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="8"></textarea>
+          </label>
+          <button type="submit" class="form-btn">Submit</button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./js/2-form.js"></script>
   </body>
 </html>
